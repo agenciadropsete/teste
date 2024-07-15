@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #edf3fb;
+}
+:root {
+    --color-roxo: #6515dd;
+    --color-cinza: #282447;
+    --color-gray: #7e7c91;
+}
+.container-principal {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.barra {
+    background-color: #fff;
+    width: 3rem;
+    height: .25rem;
+    display: inline-block;
+}
+.sellect {
+    background-color: var(--color-roxo);
+}
+.logo {
+    margin-top: 20px;
+}
+.titulo {
+    text-align: center;
+    padding: 20px 0;
+    color: #282447;
+}
+.btn {
+    background-color: #fff;
+    padding: 20px;
+    width: 400px;
+    display: block;
+    color: var(--color-cinza);
+    font-weight: 500;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,.1),0 2px 4px -2px rgba(0,0,0,.1);
+    border: 2px solid transparent;
+}
+.btn:hover {
+    background-color: #fff;
+    border: 2px solid var(--color-roxo);
+}
+.botoes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.box {
+    background-color: #fff;
+    text-align: center;
+    width: 500px;
+    color: var(--color-gray);
+    margin-top: 100px;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 10px;
+}
+.box strong {
+    color: var(--color-cinza);
+}
+.fa-circle-info {
+    color: var(--color-roxo);
+}
+footer {
+    margin-top: 60px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    color: var(--color-cinza);
+}
+footer a {
+    text-decoration: none;
+    color: var(--color-roxo);
+    padding: 10px;
+}
+.inputs {
+    background-color: #fff;
+    width: 500px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+label {
+    font-size: 14px;
+    padding: 5px 0;
+}
+input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid var(--color-gray);
+}
+.input-form {
+    margin-bottom: 10px;
+}
+.btn-continuar {
+    background-color: var(--color-roxo);
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 20px;
+}
+@media screen and (max-width: 768px) {
+    .btn {
+        width: 350px;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .box {
+        width: 350px;
+    }
+    .inputs {
+        width: 350px;
+    }
+    .barra {
+        background-color: #fff;
+        width: 2rem;
+        height: .25rem;
+        display: inline-block;
+    }
+    .sellect {
+        background-color: var(--color-roxo);
+    }
+    .titulo h3 {
+        padding: 0 30px;
+    }
+}
+
